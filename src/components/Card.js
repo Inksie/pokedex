@@ -108,11 +108,12 @@ function Card({ pokemon }) {
         <div className="card_name">{pokemon.name}</div>
 
         <div className="card_types">
-          {pokemon.types.map((type) => {
+          {pokemon.types.map((type, index) => {
             return (
               <div
                 className="card_type"
                 style={{ background: typeColors[type.type.name] }}
+                key={index}
               >
                 {type.type.name}
               </div>
