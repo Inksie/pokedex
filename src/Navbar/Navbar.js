@@ -12,6 +12,7 @@ function Navbar() {
       <img
         src="https://www.pngkit.com/png/full/19-190666_pokeball-graphic-by-maratuna-on-deviantart-banner-free.png"
         className="pokedex_img"
+        alt="pokeball"
       />
     </div>
   );

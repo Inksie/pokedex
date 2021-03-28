@@ -1,5 +1,4 @@
 import React from "react";
-import { getPokemon } from "../Services/pokemon";
 import "./style.css";
 
 const colors = {
