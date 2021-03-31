@@ -23,7 +23,6 @@ function App() {
       setNextUrl(response.next);
       setPrevUrl(response.previous);
       let pokemon = await loadingPokemon(response.results);
-      console.log(pokemon);
       setLoading(false);
     }
 
@@ -81,18 +80,25 @@ function App() {
   return (
     <div>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className="loading">
+          <h1>Gotta catch 'em all...</h1>
+          <img
+            src="https://i.pinimg.com/originals/6a/d7/f0/6ad7f0eb6e523bfed542d8b1fd627c0d.gif"
+            className="loading-image"
+          />
+        </div>
       ) : (
         <>
+          <div className="background-image" />
           <Navbar />
           <div className="btn">
-            <button onClick={prev}>Prev</button>
-            <button onClick={next}>Next</button>
+            <button onClick={prev}>PREVIOUS</button>
+            <button onClick={next}>NEXT</button>
           </div>
           <div className="search-filter">
             <input
               type="text"
-              placeholder="Search"
+              placeholder="Search pokemon name/ID"
               value={searchPoke}
               onChange={handleChange}
               className="search-bar"

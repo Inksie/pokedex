@@ -45,8 +45,8 @@ p {
   justify-content: center;
   align-items: center;
   background: rgb(124, 124, 124);
-  opacity: 0.8;
 }
+
 .card_img img {
   width: 180px;
   height: auto;
