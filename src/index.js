@@ -22,7 +22,7 @@ function App() {
       let response = await getAllPokemon(initialUrl);
       setNextUrl(response.next);
       setPrevUrl(response.previous);
-      let pokemon = await loadingPokemon(response.results);
+      await loadingPokemon(response.results);
       setLoading(false);
     }
 
@@ -85,6 +85,7 @@ function App() {
           <img
             src="https://i.pinimg.com/originals/6a/d7/f0/6ad7f0eb6e523bfed542d8b1fd627c0d.gif"
             className="loading-image"
+            alt="loading"
           />
         </div>
       ) : (
