@@ -54,7 +54,7 @@ body {
   margin: 10px;
   padding: 10px 20px;
   border-style: none;
-  font-family: "Lato";
+  font-family: inherit;
   background-color: #5f73c5;
   color: rgb(255, 255, 255);
   border-radius: 12px;
