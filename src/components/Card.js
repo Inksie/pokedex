@@ -62,6 +62,7 @@ function Card({ pokemon }) {
   // let stats = pokemon.stats.map((stat) => {
   //   return stat.base_stat;
   // });
+  //
 
   // let highStat = stats.reduce((a, b) => (a > b ? a : b), 0);
 
